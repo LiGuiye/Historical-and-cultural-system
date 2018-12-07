@@ -13,9 +13,9 @@
 	将诗词文化与互联网＋相结合，把诗词的魅力展现在大众面前，助力传统文化的推广和宣传。
 ## V1.0版本思路
   ## 设计思路
-	<img src="https://github.com/LiGuiye/Historical-and-cultural-system/blob/master/docs/%E8%AE%BE%E8%AE%A1%E6%80%9D%E8%B7%AF%E5%9B%BE.jpg" width="150" height="150" alt="图片加载失败！"/>
+  ![设计思路图片加载失败](https://github.com/LiGuiye/Historical-and-cultural-system/blob/master/docs/%E8%AE%BE%E8%AE%A1%E6%80%9D%E8%B7%AF%E5%9B%BE.jpg)
   ## 系统框架
-	<img src="https://github.com/LiGuiye/Historical-and-cultural-system/blob/master/docs/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E5%9B%BE.jpg" width="150" height="150" alt="图片加载失败！"/>
+  ![系统架构图片加载失败](https://github.com/LiGuiye/Historical-and-cultural-system/blob/master/docs/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E5%9B%BE.jpg)
 	系统基于JavaScript运行环境，参考Nodejs全栈开发思想，采用B/S结构。
 	利用ArcGIS Pro对数据进行处理后通过ArcGIS Enterprise和ArcGIS Online将本地数据发布为在线的网络服务、地图服务和要素服务。
 	使用PostgreSQL数据库，存储用户数据和从[古诗文网](https://www.gushiwen.org/)爬取的诗词数据。

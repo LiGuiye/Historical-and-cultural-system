@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+		<title>移动诗词学习一体化平台--诗途</title>
+
+		<!--引用完整-->
+		<link rel="stylesheet" href="/css/bootstrap.css" />
+		<script src="js/bootstrap.js"></script>
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/jquery.cookie.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery-1.8.2.min.js"></script>
+		
+		<!--诗人、诗名 搜索框-->
+		<link rel="stylesheet" type="text/css" href="css/Header_search.css"/>
+		
+		<!--写诗的Div框子-->
+		<link rel="stylesheet" type="text/css" href="css/popdiv_write.css"/>
+		<script type="text/javascript" src="/js/popdiv_write.js"></script>
+
+		<!--手动添加CSS、JS-->
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script type="text/javascript" src="/js/search.js" ></script>
+		<script type="text/javascript" src="js/mainpage.js"></script>
+		<!--弹出框-->
+		<script type="text/javascript" src="/js/popdiv.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/popdiv.css" />
+		<!--小团子叫Robot-->
+		<script type="text/javascript" src="js/Robot.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/Robot.css" />
+
+	</head>
+
+	<body>
+
+		<!--express托管静态文件-->
+		<!--导航条-->
+		<%- include public/loggedin_header.ejs%>
+
+		<%- include public/Robot.ejs%>
+
+		<!--显示地图-->
+		<div id="applicationDiv" class="col-md-12">这是登陆后的页面</div>
+
+		<!--弹出框-->
+		<%- include public/popdiv.ejs%>
+		<%- include public/popdiv_write.ejs%>	
+		
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/jquery.cookie.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery-1.8.2.min.js"></script>
+		<script type="text/javascript" src="js/mainpage.js"></script>
+	</body>
+
+</html>

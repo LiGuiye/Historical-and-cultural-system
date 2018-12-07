@@ -1,0 +1,36 @@
+<div id="popdiv_write">
+	<div id="write_closebtn" onclick="hide_writeDiv()">
+		<span id="" class="glyphicon glyphicon-record">
+			
+		</span>
+	</div>
+	<form id="write_CTZ">
+		<input type="text" placeholder="请输入藏头字(〃'▽'〃)" id="PoemText" />
+		<button id="btn_CreatPoem" onclick="CreatPoem()" class="ajax">
+			<span class="glyphicon glyphicon-search" ></span>
+		</button>
+
+		<button onclick='tts()' id='playBtn'>
+			<span class="glyphicon glyphicon-volume-up"></span>
+		</button>
+		<button onclick="Download()" class="ajax">
+			<span class="glyphicon glyphicon-save" ></span>
+		</button>
+
+	</form>
+	<form id="form_pot">
+		<div class="opt2">
+			<input class="magic-radio" type="radio" name="radio" id="r1" value="option1" checked>
+			<label for="r1">唐&nbsp;&nbsp;&nbsp;</label>
+		</div>
+		<div class="opt2">
+			<input class="magic-radio" type="radio" name="radio" id="r2" value="option2">
+			<label for="r2">宋</label>
+		</div>
+
+	</form>
+
+	<div id="write_output">
+
+	</div>
+</div>

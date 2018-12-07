@@ -1,0 +1,82 @@
+<div id="PoemLogo_Div"></div>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+		<a href="#" class="navbar-brand">诗途</a>
+
+		<ul class="quick_menu nav navbar-nav">
+			<li class="user_fun">
+				<a href="#"><span class="glyphicon glyphicon-edit"></span> 历代风骚</a>
+				<ul class="user_fun_sub">
+					<li>
+						<a href="/xianqin" class="ajax">先秦</a>
+					</li>
+					
+				</ul>
+			</li>
+			
+			<li class="user_fun">
+				<a href="#"><span class="glyphicon glyphicon-map-marker"></span> 校园诗词</a>
+				<ul class="user_fun_sub">
+					<li>
+						<a href="/chuyi" class="ajax">初一</a>
+					</li>
+					
+				</ul>
+			</li>
+			<li class="user_fun">
+				<a href="#"><span class="glyphicon glyphicon-gift"></span> 按图索骥</a>
+				<ul class="user_fun_sub">
+					<li>
+						<a href="/shidajingdian" class="ajax">十大景点</a>
+					</li>
+					<li>
+						<a href="/shirenluxian" class="ajax">诗人路线</a>
+					</li>
+					<li>
+						<a href="/luxianguihua" class="ajax">路线规划</a>
+					</li>
+					<li>
+						<a href="/slider1" class="ajax">诗歌数量对比</a>
+					</li>
+					<li>
+						<a href="/slider2" class="ajax">疆域边界对比</a>
+					</li>
+
+				</ul>
+			</li>
+		</ul>
+		
+		<form action="" class="navbar-form  navbar-left">
+			<div class="select_box btn">
+				<span class="select_txt">诗名</span>
+				<span class="glyphicon glyphicon-menu-down"></span>
+				<ul class="option">
+					<li>诗名</li>
+					<li>诗人</li>
+				</ul>
+			</div>
+			
+			<input type="hidden" name="" value="诗名" id="select_value">
+			<input type="text" name="" id="txtSearch" class="import form-control" placeholder="请输入搜索内容">
+			<button id="doBtn" type="submit" onclick="search()" class="ajax">
+				<span class="glyphicon glyphicon-search"></span>
+			</button>
+		</form>
+		
+		<a href="#" class="btn navbar-btn btn-primary btn-sm navbar-right" onclick="showPopup()">快速入门</a>
+		<div id="_poemSignUP" class="navbar-right">
+			<ul id="_ClickMe" class="nav navbar-nav">
+				<li>
+					<a id="Login_start_" href="#">登录</a>
+				</li>
+				<li>
+					<a id="Regist_start_" href="#">注册</a>
+				</li>
+			</ul>
+			<p class="navbar-text">
+				<a href="" class="navbar-link">你好</a>
+			</p>
+		</div>
+	</div>
+</nav>

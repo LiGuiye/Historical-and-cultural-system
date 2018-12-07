@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>JS Bin</title>
+		<script type="text/javascript" src="/js/OnlineVoice.js"></script>
+		<script type="text/javascript">
+			// 初始化变量
+			var audio = null;
+			var playBtn = null;
+
+			// dom加载完毕回调后注册按钮对象
+			ready(function() {
+				playBtn = document.getElementById('playBtn');
+			});
+
+			// 合成按钮
+			function tts() {
+				let text = document.getElementById('text').value;
+				// 调用语音合成接口
+				// 参数含义请参考 https://ai.baidu.com/docs#/TTS-API/41ac79a6
+				audio = btts({
+					tex: text,
+					tok: '25.9c5ce8215438262719fa19b375147bfa.315360000.1855578061.282335-11760682',
+					spd: 2,
+					pit: 5,
+					vol: 15,
+					per: 3
+				}, {
+					volume: 0.3,
+					autoDestory: true,
+					timeout: 10000,
+					hidden: false,
+					onInit: function(htmlAudioElement) {
+
+					},
+					onSuccess: function(htmlAudioElement) {
+						audio = htmlAudioElement;
+						
+						audio.play();
+					},
+					onError: function(text) {
+						alert(text)
+					},
+					onTimeout: function() {
+						alert('timeout')
+					}
+				});
+				
+			}
+
+			// dom加载完毕回调
+			function ready(callback) {
+				var doc = document;
+				if(doc.addEventListener) {
+					doc.addEventListener('DOMContentLoaded', function() {
+						callback();
+					}, false);
+				} else if(doc.attachEvent) {
+					doc.attachEvent('onreadystatechange', function() {
+						if(doc.readyState === 'complete') {
+							callback();
+						}
+					});
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<div>
+			百度语音合成
+		</div>
+		<div>
+			<input type="text" id='text' value='百度语音合成' style='width: 500px;'>
+			<button onclick='tts()' id='playBtn'>合成</button>
+		</div>
+	</body>
+
+</html>
+

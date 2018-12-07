@@ -18,7 +18,7 @@
   
 	系统基于JavaScript运行环境，参考Nodejs全栈开发思想，采用B/S结构。
 	利用ArcGIS Pro对数据进行处理后通过ArcGIS Enterprise和ArcGIS Online将本地数据发布为在线的网络服务、地图服务和要素服务。
-	使用PostgreSQL数据库，存储用户数据和从[古诗文网](https://www.gushiwen.org/)爬取的诗词数据。
+	使用PostgreSQL数据库，存储用户数据和从爬取的诗词数据。
 	基于TensorFlow使用LSTM循环神经网络对唐宋诗词数据分别进行训练，形成诗词创作模型。
 	前端使用bootstrap框架对网站页面进行美化，调用ArcGIS API for JavaScript和百度语音合成API，利用js和python联动。  
 	以达到对数据进行可视化和提供创作诗词朗读功能、调用预训练的诗词创作模型实现创作诗词前端显示的目的。
